@@ -11,3 +11,5 @@ step 5
 inside tailwind.config.js  content ["*"]
 step 6 
 npm run start 
+
+

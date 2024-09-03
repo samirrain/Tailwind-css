@@ -1,0 +1,8 @@
+After learning tailwind  you must know css this much
+
+text properties 
+display properites 
+flex properties 
+background properties 
+position properties 
+box model 

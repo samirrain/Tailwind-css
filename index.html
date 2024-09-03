@@ -4,9 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="input.css">
 </head>
-<body>
-    <h1 class="text-red-500">hello tailwind</h1>
+<body class="flex justify-center items-center h-screen bg-green-200 flex-col gap-4 " >
+  <div class="card w-96  flex flex-col  items-center py-6 px-3 bg-white rounded-xl">
+<div class="img w-16 h-16 overflow-hidden rounded-full ">
+    <img src="https://plus.unsplash.com/premium_photo-1695582868702-5b0f91584d00?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3fHx8ZW58MHx8fHx8" alt="" class="object-cover object-center w-full h-full">
+</div>
+<button class="bg-blue-100 py-1 px-5 rounded-lg mt-3">pro</button>
+<h3 class="text-center font-semibold text-2xl mt-1">samir rain</h3>
+<p class="text-center capitalize text-blue-500">Frontend developer</p>
+<p class="text-center text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, necessitatibus?</p>
+<div class="icons w-full flex justify-center items-center gap-10 p-8 ">
+  <i class="fa-brands fa-behance"></i>
+  <i class="fa-brands fa-facebook-f"></i>
+  <i class="fa-brands fa-linkedin-in"></i>
+  <i class="fa-brands fa-twitter"></i>
+  <i class="fa-brands fa-instagram"></i>
+</div>
+<div class="buttonbox w-full flex justify-center items-center gap-5 p-4">
+  <button class="border-2 border-blue-900 py-2 px-10 rounded-xl text-blue-900 capitalize text-lg hover:bg-blue-900 hover:text-white transition-all">message</button>
+
+  <button class="border-2 border-blue-900 py-2 px-10 rounded-xl text-white capitalize text-lg bg-blue-900 hover:text-blue-900 hover:bg-white transition-all">Connect</button>
+</div>
+  </div>
+
+  <div class="secondcard bg-white  w-96 rounded-xl  p-4">
+    <div class="top flex gap-5">
+      <div class="img w-16 h-16 rounded-full overflow-hidden ">
+        <img src="https://plus.unsplash.com/premium_photo-1695582868702-5b0f91584d00?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3fHx8ZW58MHx8fHx8" alt="" class="w-full h-full">
+      </div>
+      <div class="p-box">
+        <P>POST</P>
+        <P class="font-bold">23</P>
+      </div>
+      <div class="p-box">
+        <P>FOLLOWERS</P>
+        <P class="font-bold">323</P>
+      </div>
+      <div class="p-box">
+        <P>FOLLOWING</P>
+        <P class="font-bold">223</P>
+      </div>
+    </div>
+    <div class="middle my-2">
+      <h2 class="text-xl text-blue-800 font-semibold capitalize">samir rain</h2>
+      <p class="text-blue-300">frontend developer</p>
+    </div>
+    <div class="bottom">
+      <h2 class="text-lg text-blue-800 font-semibold capitalize">about</h2>
+      <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quis inventore omnis corrupti expedita assumenda.</p>
+    </div>
+  </div>
+
+
+
 </body>
 </html>
