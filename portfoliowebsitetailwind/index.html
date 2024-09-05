@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="input.css">
 </head>
-<body class="bg-black">
+<body class="bg-black scroll-smooth ">
     <main>
         <section class="herosection bg-gradient-to-b from-red-950 h-screen
         
@@ -30,13 +30,15 @@
             <h1 class="text-[16vw] font-semibold text-amber-50 leading-[100px]  md:leading-[153px] lg:leading-[183px] 
             w-full text-right ">RAIN</h1>
         </div>
+
+    <img src="assets/bg.png" class=" absolute left-[42%] top-[56%] translate-x-[-50%] translate-y-[-50%] z-[1000] brightness-100 w-[300px]  " alt="">
         <div class="last  flex justify-between flex-wrap-reverse gap-5 items-center relative top-[200px]">
             <div class="left">
                 <p class="text-sm text-white">scroll to work</p>
             </div>
             <div class="right flex gap-4 ">
-                <div class="logo w-14 overflow-hidden rounded-2xl">
-                    <img src="https://avatars.githubusercontent.com/u/124909580?v=4" alt="" class="w-full h-full">
+                <div class="logo w-14 h-14 overflow-hidden rounded-2xl">
+                    <img src="assets/letter-s2.png" alt="" class="w-full h-full object-cover ">
                 </div>
                 <div class="inf text-white">
                     <h2 class="text-xl capitalize font-mono">Frontend developer  </h2>
@@ -46,8 +48,74 @@
             </div>
         </div>
         </section>
-        <section class="projectsection"  id="project" ></section>
-        <section class="aboutsection" id="about"></section>
+        <section class="projectsection px-5 py-16"  id="project" >
+    <div class="container flex">
+        <div class="left w-[50%] px-10">
+            <div class="box overflow-hidden w-[400px] h-[400px] border-2  rounded-xl my-4">
+                <div class="project-image w-full h-[300px]">
+                    <img src="https://images.unsplash.com/photo-1522069213448-443a614da9b6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z2FtZXxlbnwwfHwwfHx8MA%3D%3D" alt="" class="w-full h-full">
+                </div>
+                <div class="project-name p-2">
+                    <h2 class="text-white text-2xl font-mono">Connect four game</h2>
+                </div>
+            </div>
+            <div class="box overflow-hidden w-[400px] h-[400px] border-2  rounded-xl my-4">
+                <div class="project-image w-full h-[300px]">
+                    <img src="https://images.unsplash.com/photo-1522069213448-443a614da9b6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z2FtZXxlbnwwfHwwfHx8MA%3D%3D" alt="" class="w-full h-full">
+                </div>
+                <div class="project-name p-2">
+                    <h2 class="text-white text-2xl font-mono">Connect four game</h2>
+                </div>
+            </div>
+            <div class="box overflow-hidden w-[400px] h-[400px] border-2  rounded-xl my-4">
+                <div class="project-image w-full h-[300px]">
+                    <img src="https://images.unsplash.com/photo-1522069213448-443a614da9b6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z2FtZXxlbnwwfHwwfHx8MA%3D%3D" alt="" class="w-full h-full">
+                </div>
+                <div class="project-name p-2">
+                    <h2 class="text-white text-2xl font-mono">Connect four game</h2>
+                </div>
+            </div>
+            <div class="box overflow-hidden w-[400px] h-[400px] border-2  rounded-xl my-4">
+                <div class="project-image w-full h-[300px]">
+                    <img src="https://images.unsplash.com/photo-1522069213448-443a614da9b6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z2FtZXxlbnwwfHwwfHx8MA%3D%3D" alt="" class="w-full h-full">
+                </div>
+                <div class="project-name p-2">
+                    <h2 class="text-white text-2xl font-mono">Connect four game</h2>
+                </div>
+            </div>
+
+
+        
+          </div>
+          <div class="right w-[50%]">
+            <div class="title sticky top-16 ">
+                <h2 class="text-7xl text-white font-sarif tracking-wide font-bold ">My Project</h2>
+                <button class="mt-8 border-2 border-red-600 rounded-xl 
+                bg-transparent py-1 px-10 text-white">All Projects</button>
+            </div>
+          </div>
+    </div>
+        </section>
+        <section class="aboutsection  px-5 py-16" id="about">
+            <div class="container bg-amber-100 w-full p-10 m-auto">
+                <h2 class="text-4xl tracking-wide leading-[45px] font-semibold capitalize italic ">Welcome to my corner of the web! I am a passionate <span class="text-red-500">web developer, graphic designer, and mobile app developer</span> with a flair for creating visually stunning and highly functional digital experiences. With a strong background in various technologies and design principles,<span class="text-red-500"> I strive to bring innovative solutions to life.</span> Whether you need a cutting-edge website, a captivating graphic design, or a user-friendly mobile app, I am here to turn your ideas into reality. Let's create something amazing together!</h2>
+
+             <div class="about-content flex justify-between py-16">
+                <div class="social-links flex flex-col gap-5">
+             <button class="bg-black text-white py-2 px-8 rounded-xl ">linkdin</button>
+             <button class="bg-black text-white py-2 px-8 rounded-xl ">github</button>
+             <button class="bg-black text-white py-2 px-8 rounded-xl ">youtube</button>
+             <button class="bg-black text-white py-2 px-8 rounded-xl ">instagram</button>
+             <button class="bg-black text-white py-2 px-8 rounded-xl ">discord</button>
+                </div>
+           
+                <div class="imgbox w-[500px] h-[400px] overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1455894127589-22f75500213a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNvbXB1dGVyfGVufDB8fDB8fHww" alt="" class="w-full h-full object-cover">
+                </div>
+             </div>
+
+            </div>
+        </section>
         <section class="contactsection" id="contact"></section>
         <footer class="footer"></footer>
     </main>
