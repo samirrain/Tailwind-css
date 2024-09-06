@@ -4,35 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./input.css">
 </head>
 <body class="bg-black scroll-smooth ">
     <main>
         <section class="herosection bg-gradient-to-b from-red-950 h-screen
         
-        py-4 px-12" id="hero">
+        py-4 px-4 sm:px-12" id="hero">
         <header class=" flex items-center justify-between">
             <div class="logo w-14 ">
                 <img src="./assets/slogo.png" alt="" class="w-full h-full">
             </div>
-
-            <nav class="bg-black py-2 px-4 rounded-lg ">
-                <ul class="flex items-center justify-center gap-5">
-                    <li class="p-2"><a class="text-white" href="#project">Project</a></li>
-                    <li class="p-2"><a class="text-white" href="#about">About</a></li>
-                    <li class="py-1 px-3 bg-red-600 rounded-md"><a class="text-white" href="#contact">Contact us</a></li>
+            <div class="responsive bg-red-500 p-2 rounded-xl w-[55px] h-[55px] flex justify-center items-center sm:hidden cursor-pointer">
+                <i class="fa-solid fa-bars-staggered text-2xl text-white"></i>
+            </div>
+            <nav class= "navbar fixed top-0 bottom-0 right-[-100%] transition-all sm:relative w-[50%] sm:w-auto bg-black py-2 px-4 rounded-lg z-10 sm:block sm:right-0">
+                <div class="closenav sm:hidden bg-white rounded-full p-2 absolute right-4 top-4 cursor-pointer w-[55px] h-[55px] flex justify-center items-center">
+                    <i class="fa-solid fa-xmark text-3xl"></i>
+                </div>
+                <ul class=" sm:flex items-center justify-center gap-5 py-20 sm:py-0">
+                    <li class="p-2 overflow-hidden  mt-2 sm:mt-0"><a class="text-white text-3xl sm:text-sm inline-block" href="#project" id="1">Project</a></li>
+                    <li class="p-2 overflow-hidden mt-2 sm:mt-0"><a class="text-white text-3xl sm:text-sm inline-block" href="#about" id="2">About</a></li>
+                    <li class="py-1 overflow-hidden px-3 bg-red-600 mt-2 sm:mt-0 rounded-md"><a class="text-white text-3xl sm:text-sm inline-block" href="#contact" id="3">Contact us</a></li>
                 </ul>
             </nav>
         </header>
-        <div class="bottom  mt-10 w-[80%] m-auto  ">
-            <h1 class="text-[16vw] font-semibold  text-amber-50 leading-[100px]  md:leading-[153px] lg:leading-[183px]
+        <div class="bottom  mt-5 sm:mt-10 w-[90%] sm:w-[80%] m-auto overflow-hidden ">
+            <h1 class="hero-name text-[16vw] font-semibold  text-amber-50 leading-[80px] sm:leading-[100px]  md:leading-[153px] lg:leading-[183px]
             w-min">SAMIR</h1>
-            <h1 class="text-[16vw] font-semibold text-amber-50 leading-[100px]  md:leading-[153px] lg:leading-[183px] 
+            <h1 class=" hero-name text-[16vw] font-semibold text-amber-50 leading-[80px]  sm:leading-[100px]  md:leading-[153px] lg:leading-[183px] 
             w-full text-right ">RAIN</h1>
         </div>
 
-    <img src="assets/bg.png" class=" absolute left-[42%] top-[56%] translate-x-[-50%] translate-y-[-50%] z-[1000] brightness-100 w-[300px]  " alt="">
-        <div class="last  flex justify-between flex-wrap-reverse gap-5 items-center relative top-[200px]">
+    <img src="assets/bg.png" class="myimage absolute left-[35%] md:left-[42%] top-[40%] md:top-[50%] lg:top-[56%] translate-x-[-50%] translate-y-[-50%] z-[1000] brightness-100 w-[170px] md:w-[250px] lg:w-[300px]  " alt="">
+        <div class="last py-12 sm:py-1  flex justify-between flex-wrap-reverse gap-5 items-center relative top-[200px]">
             <div class="left">
                 <p class="text-sm text-white">scroll to work</p>
             </div>
@@ -48,9 +54,9 @@
             </div>
         </div>
         </section>
-        <section class="projectsection px-5 py-16"  id="project" >
-    <div class="container flex">
-        <div class="left w-[50%] px-10">
+        <section class="projectsection px-5 py-16 w-full flex justify-center items-center"  id="project" >
+    <div class="container flex flex-col-reverse md:flex-row  w-full ">
+        <div class="left w-full md:w-[50%] px-10">
             <div class="box overflow-hidden w-[400px] h-[400px] border-2  rounded-xl my-4">
                 <div class="project-image w-full h-[300px]">
                     <img src="https://images.unsplash.com/photo-1522069213448-443a614da9b6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z2FtZXxlbnwwfHwwfHx8MA%3D%3D" alt="" class="w-full h-full">
@@ -87,26 +93,26 @@
 
         
           </div>
-          <div class="right w-[50%]">
-            <div class="title sticky top-16 ">
-                <h2 class="text-7xl text-white font-sarif tracking-wide font-bold ">My Project</h2>
+          <div class="right w-full text-center md:text-left md:w-[50%] ">
+            <div class="title md:sticky md:top-16 w-full">
+                <h2 class="text-5xl lg:text-7xl text-white font-sarif tracking-wide font-bold ">My Project</h2>
                 <button class="mt-8 border-2 border-red-600 rounded-xl 
                 bg-transparent py-1 px-10 text-white">All Projects</button>
             </div>
           </div>
     </div>
         </section>
-        <section class="aboutsection  px-5 py-16" id="about">
-            <div class="container bg-amber-100 w-full p-10 m-auto">
-                <h2 class="text-4xl tracking-wide leading-[45px] font-semibold capitalize italic ">Welcome to my corner of the web! I am a passionate <span class="text-red-500">web developer, graphic designer, and mobile app developer</span> with a flair for creating visually stunning and highly functional digital experiences. With a strong background in various technologies and design principles,<span class="text-red-500"> I strive to bring innovative solutions to life.</span> Whether you need a cutting-edge website, a captivating graphic design, or a user-friendly mobile app, I am here to turn your ideas into reality. Let's create something amazing together!</h2>
+        <section class="aboutsection bg-[url('./assets/bg3.jpg')] bg-fixed py-16" id="about">
+            <div class="container bg-amber-100 w-full sm:w-[80%] p-10 m-auto">
+                <h2 class=" text:xl sm:text-4xl tracking-wide sm:leading-[45px] font-semibold capitalize italic ">Welcome to my corner of the web! I am a passionate <span class="text-red-500">web developer, graphic designer, and mobile app developer</span> with a flair for creating visually stunning and highly functional digital experiences. With a strong background in various technologies and design principles,<span class="text-red-500"> I strive to bring innovative solutions to life.</span> Whether you need a cutting-edge website, a captivating graphic design, or a user-friendly mobile app, I am here to turn your ideas into reality. Let's create something amazing together!</h2>
 
-             <div class="about-content flex justify-between py-16">
-                <div class="social-links flex flex-col gap-5">
-             <button class="bg-black text-white py-2 px-8 rounded-xl ">linkdin</button>
-             <button class="bg-black text-white py-2 px-8 rounded-xl ">github</button>
-             <button class="bg-black text-white py-2 px-8 rounded-xl ">youtube</button>
-             <button class="bg-black text-white py-2 px-8 rounded-xl ">instagram</button>
-             <button class="bg-black text-white py-2 px-8 rounded-xl ">discord</button>
+             <div class="about-content flex justify-center items-center sm:justify-between flex-col md:flex-row py-16 gap-5">
+                <div class="social-links flex flex-col gap-5 w-full sm:w-auto">
+             <button class="bg-black text-white py-2 px-8 rounded-xl w-full sm:w-auto">linkdin</button>
+             <button class="bg-black text-white py-2 px-8 rounded-xl w-full sm:w-auto">github</button>
+             <button class="bg-black text-white py-2 px-8 rounded-xl w-full sm:w-auto">youtube</button>
+             <button class="bg-black text-white py-2 px-8 rounded-xl w-full sm:w-auto">instagram</button>
+             <button class="bg-black text-white py-2 px-8 rounded-xl w-full sm:w-auto">discord</button>
                 </div>
            
                 <div class="imgbox w-[500px] h-[400px] overflow-hidden rounded-lg">
@@ -115,31 +121,153 @@
              </div>
 
             </div>
+
+            <div class="containers2 skills bg-slate-900 z-10 px-2 py-10 sm:px-10 w-full sm:w-[80%] mx-auto my-20  ">
+              <h2 class="text-white text-3xl font-semibold p-2 text-center">My Skills</h2>
+                <div class="skills-box flex justify-center flex-wrap items-center p-10 gap-10">
+ 
+              <div class="box bg-slate-800 p-2 w-[200px] h-[140px]            rounded-lg flex justify-center flex-col items-center">
+        <img src="./assets/html.png" class="w-[80px] h-[80px]" alt="">
+        <div class="title">
+            <h3 class="text-white p-1 text-2xl capitalize text-center">HTML</h3>
+        </div>
+              </div>
+              <div class="box bg-slate-800 p-2 w-[200px] h-[140px]            rounded-lg flex justify-center flex-col items-center">
+        <img src="./assets/css.png" class="w-[80px] h-[80px]" alt="">
+        <div class="title">
+            <h3 class="text-white p-1 text-2xl capitalize text-center">CSS</h3>
+        </div>
+              </div>
+              <div class="box bg-slate-800 p-2 w-[200px] h-[140px]            rounded-lg flex justify-center flex-col items-center">
+        <img src="./assets/javascript.png" class="w-[80px] h-[80px]" alt="">
+        <div class="title">
+            <h3 class="text-white p-1 text-2xl capitalize text-center">Javascript</h3>
+        </div>
+              </div>
+              <div class="box bg-slate-800 p-2 w-[200px] h-[140px]            rounded-lg flex justify-center flex-col items-center">
+        <img src="./assets/react.png" class="w-[80px] h-[80px]" alt="">
+        <div class="title">
+            <h3 class="text-white p-1 text-2xl capitalize text-center">React js</h3>
+        </div>
+              </div>
+              <div class="box bg-slate-800 p-2 w-[200px] h-[140px]            rounded-lg flex justify-center flex-col items-center">
+        <img src="./assets/tailwind.png" class="w-[80px] h-[80px]" alt="">
+        <div class="title">
+            <h3 class="text-white p-1 text-2xl capitalize text-center">Tailwind Css</h3>
+        </div>
+              </div>
+              <div class="box bg-slate-800 p-2 w-[200px] h-[140px]            rounded-lg flex justify-center flex-col items-center">
+        <img src="./assets/nodejs.png" class="w-[80px] h-[80px]" alt="">
+        <div class="title">
+            <h3 class="text-white p-1 text-2xl capitalize text-center">Node js</h3>
+        </div>
+              </div>
+              <div class="box bg-slate-800 p-2 w-[200px] h-[140px]            rounded-lg flex justify-center flex-col items-center">
+        <img src="./assets/django.png" class="w-[80px] h-[80px]" alt="">
+        <div class="title">
+            <h3 class="text-white p-1 text-2xl capitalize text-center">Djanog</h3>
+        </div>
+              </div>
+              <div class="box bg-slate-800 p-2 w-[200px] h-[140px]            rounded-lg flex justify-center flex-col items-center">
+        <img src="./assets/python.png" class="w-[80px] h-[80px]" alt="">
+        <div class="title">
+            <h3 class="text-white p-1 text-2xl capitalize text-center">python</h3>
+        </div>
+              </div>
+              <div class="box bg-slate-800 p-2 w-[200px] h-[140px]            rounded-lg flex justify-center flex-col items-center">
+        <img src="./assets/mongodb.png" class="w-[80px] h-[80px]" alt="">
+        <div class="title">
+            <h3 class="text-white p-1 text-2xl capitalize text-center">Mongo Db</h3>
+        </div>
+              </div>
+              <div class="box bg-slate-800 p-2 w-[200px] h-[140px]            rounded-lg flex justify-center flex-col items-center">
+        <img src="./assets/nextjs.png" class="w-[80px] h-[80px]" alt="">
+        <div class="title">
+            <h3 class="text-white p-1 text-2xl capitalize text-center">Next js</h3>
+        </div>
+              </div>
+</div>
+            </div>
         </section>
-        <section class="contactsection" id="contact">
-                <div class="left bg-red-100 p-4 w-[600px]" >
-                    <form action=""  class="flex flex-col gap-5">
-                        <div class="input-box">
-                            <label for="Enter your Name text-white " class="block">Enter your Name</label>
-                            <input type="text" autocomplete="off" class="p-2 border-none outline-none rounded-md w-full">
-                        </div>
-                        <div class="input-box">
-                            <label for="Enter your Name text-white " class="block">Enter Your Email</label>
-                            <input type="text" autocomplete="off" class="p-2 border-none outline-none rounded-md w-full">
-                        </div>
-                        <div class="input-box">
-                            <label for="Enter your Name text-white " class="block">Enter your Message</label>
-                            
-                            <textarea name="" id="" class="p-2 border-none outline-none rounded-md w-full"></textarea>
-                        </div>
-                        <div class="input-box">
-                       <button class="py-2 px-10 text-sm text-white bg-black hover:border-2 hover:border-black hover:bg-transparent hover:text-black rounded-xl">Submit</button>
-                        </div>
-                    </form>
+        <section class="contactsection bg-[url('./assets/bg2.jpg')] bg-fixed h-screen" id="contact">
+            <div class="move-chat overflow-hidden bg-red-900 p-4 flex  ">
+                <div class="move translate-x-[-100%] px-6 flex flex-shrink-0 gap-8 items-center">
+                    <h2 class="text-white text-5xl">Let's Chat </h2>
+                    <img src="./assets/technology.png" class="w-20" alt="">
+
                 </div>
-                <div class="right"></div>
-        </section>
-        <footer class="footer">
+                <div class="move translate-x-[-100%] px-6 flex flex-shrink-0 gap-8 items-center">
+                    <h2 class="text-white text-5xl">Let's Chat </h2>
+                    <img src="./assets/technology.png" class="w-20" alt="">
+
+                </div>
+                <div class="move translate-x-[-100%] px-6 flex flex-shrink-0 gap-8 items-center">
+                    <h2 class="text-white text-5xl">Let's Chat </h2>
+                    <img src="./assets/technology.png" class="w-20" alt="">
+
+                </div>
+                <div class="move translate-x-[-100%] px-6 flex flex-shrink-0 gap-8 items-center">
+                    <h2 class="text-white text-5xl">Let's Chat </h2>
+                    <img src="./assets/technology.png" class="w-20" alt="">
+
+                </div>
+                <div class="move translate-x-[-100%] px-6 flex flex-shrink-0 gap-8 items-center">
+                    <h2 class="text-white text-5xl">Let's Chat </h2>
+                    <img src="./assets/technology.png" class="w-20" alt="">
+
+                </div>
+                <div class="move translate-x-[-100%] px-6 flex flex-shrink-0 gap-8 items-center">
+                    <h2 class="text-white text-5xl">Let's Chat </h2>
+                    <img src="./assets/technology.png" class="w-20" alt="">
+
+                </div>
+                <div class="move translate-x-[-100%] px-6 flex flex-shrink-0 gap-8 items-center">
+                    <h2 class="text-white text-5xl">Let's Chat </h2>
+                    <img src="./assets/technology.png" class="w-20" alt="">
+
+                </div>
+                <div class="move translate-x-[-100%] px-6 flex flex-shrink-0 gap-8 items-center">
+                    <h2 class="text-white text-5xl">Let's Chat </h2>
+                    <img src="./assets/technology.png" class="w-20" alt="">
+
+                </div>
+               
+             
+             
+              
+            </div>
+           <div class="flex justify-center  items-center flex-col lg:flex-row-reverse gap-16 py-14">
+            <div class="left bg-red-700  p-5 w-[600px] rounded-md " >
+                <h2 class="text-3xl font-semibold text-white text-center">Contact Us</h2>
+                <form action=""  class="flex flex-col gap-2 ">
+                    <div class="input-box">
+                        <label for="Enter your Name  " class="block text-white">Enter your Name</label>
+                        <input type="text" autocomplete="off" class="p-2 border-none outline-none rounded-md w-full my-1" placeholder="Enter your name">
+                    </div>
+                    <div class="input-box">
+                        <label for="Enter your Name  " class="block text-white">Enter Your Email</label>
+                        <input type="text" autocomplete="off" class="p-2 border-none outline-none rounded-md w-full my-1" placeholder="Enter your Email">
+                    </div>
+                    <div class="input-box">
+                        <label for="Enter your Name  " class="block text-white">Enter your Message</label>
+                        
+                        <textarea name="" id="" class="p-2 border-none outline-none rounded-md w-full h-[120px] my-1 resize-none" placeholder="Enter your Message"></textarea>
+                    </div>
+                    <div class="input-box">
+                   <button class="py-2 px-10 text-sm text-white bg-black hover:border-2 hover:border-black hover:bg-transparent hover:text-black rounded-xl">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="right  w-[40%]">
+               <div class="img w-full ">
+                      <img src="./assets/contact-us-flat-boy-background.png"
+                         class="w-full h-full" alt="">
+                       </div>
+    
+            </div>
+           </div>
+
+           <footer class="footer">
             <nav class="bg-black py-2 px-4 rounded-lg ">
                 <ul class="flex items-center justify-center gap-5">
                     <li class="p-2"><a class="text-white" href="#project">Project</a></li>
@@ -147,8 +275,17 @@
                     <li class="py-1 px-3 bg-red-600 rounded-md"><a class="text-white" href="#contact">Contact us</a></li>
                 </ul>
             </nav>
-            <p class="text-white p-6 text-center ">&copy;2024 All Right Reseverd by SamirRain</p>
+            <p class="text-white p-4 text-center ">&copy;2024 All Right Reseverd by SamirRain</p>
         </footer>
+        </section>
+      
     </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="module" src="./input.js"></script>
 </body>
 </html>
