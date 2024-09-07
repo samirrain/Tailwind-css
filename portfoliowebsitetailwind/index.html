@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>codewithsamir</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./input.css">
 </head>
 <body class="bg-black scroll-smooth ">
     <main class="w-full h-auto">
-        <section class="herosection bg-gradient-to-b from-red-950 h-screen
+
+        
+        <section class="herosection relative bg-gradient-to-b from-red-950 h-[140vh]  sm:h-screen
         
         py-4 px-4 sm:px-12 w-full" id="hero">
         <header class=" flex items-center justify-between w-full">
@@ -19,76 +21,146 @@
             <div class="responsive bg-red-500 p-2 rounded-xl w-[45px] h-[45px] flex justify-center items-center sm:hidden cursor-pointer">
                 <i class="fa-solid fa-bars-staggered text-2xl text-white"></i>
             </div>
-            <nav class= "navbar fixed top-0 bottom-0 right-[-100%] transition-all sm:relative w-[50%] sm:w-max bg-black py-2 px-4 rounded-lg z-10 sm:block sm:right-0">
+            <nav class= "navbar  fixed top-0 bottom-0 right-[-100%] transition-all sm:relative w-[80%] sm:w-max bg-black py-2 px-4 rounded-lg z-50 sm:block sm:right-0">
                 <div class="closenav sm:hidden bg-white rounded-full p-2 absolute right-4 top-4 cursor-pointer w-[40px] h-[40px] flex justify-center items-center">
                     <i class="fa-solid fa-xmark text-xl"></i>
                 </div>
                 <ul class=" sm:flex items-center justify-center gap-5 py-20 sm:py-0">
-                    <li class="p-2 overflow-hidden w-max  mt-2 sm:mt-0"><a class="text-white text-xl sm:text-sm inline-block" href="#project" id="1">Project</a></li>
-                    <li class="p-2 overflow-hidden mt-2 w-max sm:mt-0"><a class="text-white text-xl sm:text-sm inline-block" href="#about" id="2">About</a></li>
-                    <li class="py-1 overflow-hidden w-max px-3 bg-red-600 mt-2 sm:mt-0 rounded-md">
+                    <li class="p-1 hover:bg-green-500 rounded-md overflow-hidden w-max  mt-2 sm:mt-0"><a class="text-white text-xl sm:text-sm inline-block" href="#project" id="1">Project</a></li>
+                    <li class="p-1 hover:bg-green-500 rounded-md overflow-hidden mt-2 w-max sm:mt-0"><a class="text-white text-xl sm:text-sm inline-block" href="#about" id="2">About</a></li>
+                    <li class="py-1 hover:bg-green-500  overflow-hidden w-max px-3 bg-red-600 mt-2 sm:mt-0 rounded-md">
                         <a class="text-white text-xl sm:text-sm inline-block" href="#contact" id="3">Contact us</a></li>
                 </ul>
             </nav>
         </header>
         <div class="bottom  mt-5 sm:mt-10 w-[90%] sm:w-[80%] m-auto overflow-hidden ">
-            <h1 class="hero-name text-[16vw] font-semibold  text-amber-50 leading-[80px] sm:leading-[100px]  md:leading-[153px] lg:leading-[183px]
+            <h1 class="hero-name text-[16vw] font-semibold  text-amber-50 leading-[70px] sm:leading-[100px]  md:leading-[153px] lg:leading-[183px]
             w-min">SAMIR</h1>
-            <h1 class=" hero-name text-[16vw] font-semibold text-amber-50 leading-[80px]  sm:leading-[100px]  md:leading-[153px] lg:leading-[183px] 
+            <h1 class=" hero-name text-[16vw] font-semibold text-amber-50 leading-[70px]  sm:leading-[100px]  md:leading-[153px] lg:leading-[183px] 
             w-full text-right ">RAIN</h1>
         </div>
 
-    <img src="assets/bg.png" class="myimage absolute left-[35%] md:left-[42%] top-[40%] md:top-[50%] lg:top-[56%] translate-x-[-50%] translate-y-[-50%] z-[1000] brightness-100 w-[170px] md:w-[250px] lg:w-[300px]  " alt="">
-        <div class="last py-12 sm:py-1  flex justify-between flex-wrap-reverse gap-5 items-center relative top-[200px]">
+    <img src="assets/bg.png" class="myimage absolute left-[35%] md:left-[42%] top-[45%] sm:top-[40%] md:top-[50%] lg:top-[56%] translate-x-[-50%] translate-y-[-50%] z-[10] brightness-100 w-[170px] md:w-[250px] lg:w-[300px]  " alt="">
+    
+        <div class="last sm:px-12 px-1  flex justify-center sm:justify-between flex-wrap-reverse gap-5 items-center absolute  bottom-0 left-0 w-full">
             <div class="left">
-            <button class="py-2 px-5 text-sm border-2 hover:bg-red-700 text-white rounded-lg">My Resume</button>
+           <a href="https://drive.google.com/file/d/1u6OXa25ZX9bVykIy3_WSBgR4tiB4sx9I/view?usp=sharing" target="_blank"> <button class="py-2 px-5 text-sm border-2 hover:bg-red-700 text-white rounded-lg">My Resume</button></a>
             </div>
             <div class="right flex gap-4 ">
-                <div class="logo w-14 h-14 overflow-hidden rounded-2xl">
+                <div class="logo w-10 sm:w-14 h-10 sm:h-14 overflow-hidden rounded-2xl">
                     <img src="assets/letter-s2.png" alt="" class="w-full h-full object-cover ">
                 </div>
                 <div class="inf text-white">
-                    <h2 class="text-xl capitalize font-mono">Frontend developer  </h2>
-                    <h2 class="text-xl capitalize font-mono">Mobile app developer</h2>
+                    <h2 class="text-lg sm:text-xl capitalize font-mono">Frontend developer  </h2>
+                    <h2 class="text-lg sm:text-xl capitalize font-mono">Mobile app developer</h2>
 
                 </div>
             </div>
         </div>
         </section>
-        <section class="projectsection  px-1 sm:px-5 py-16 w-full flex justify-center items-center"  id="project" >
+        <section class="projectsection  px-1 sm:px-5 py-16 w-full flex justify-center  items-center "   id="project" >
     <div class="container flex flex-col-reverse md:flex-row  w-full ">
-        <div class="left w-full md:w-[50%] px-10">
-            <div class="box overflow-hidden w-full sm:w-[400px] h-[400px] border-2  rounded-xl my-4">
-                <div class="project-image w-full h-[300px]">
-                    <img src="https://images.unsplash.com/photo-1522069213448-443a614da9b6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z2FtZXxlbnwwfHwwfHx8MA%3D%3D" alt="" class="w-full h-full">
+        <div class="left w-full md:w-[50%] px-1 sm:px-10">
+            <div class="box overflow-hidden w-full sm:w-[400px] h-auto border-2  rounded-xl my-4">
+                <div class="project-image w-full h-[200px] sm:h-[300px]">
+                    <img src="./assets/images/connect-4-game.jpg" alt="" class="w-full h-full">
                 </div>
                 <div class="project-name p-2">
                     <h2 class="text-white text-2xl font-mono">Connect four game</h2>
                 </div>
+                <div class="flex space-x-4 p-4">
+                    <a href="https://github.com/Samir123786/Samir123786.github.io/tree/main/connect%20four%20master" class="flex items-center space-x-2 text-white hover:text-red-500">
+                        <i class="fa-solid fa-download"></i>
+                        <p class="text-sm">Source Code</p>
+                    </a>
+                
+                    <a href="https://samir123786.github.io/connect%20four%20master/" class="flex items-center space-x-2 text-white hover:text-red-500">
+                        <i class="fa-solid fa-eye"></i>
+                        <p class="text-sm">View Project</p>
+                    </a>
+                
+                    <a href="https://www.youtube.com/playlist?list=PLzc4VJhjKTXgVfunV-MfZIjBDWmdccnzr" class="flex items-center space-x-2 text-white hover:text-red-500">
+                        <i class="fa-solid fa-video"></i>
+                        <p class="text-sm">Watch Video</p>
+                    </a>
+                </div>
+                
             </div>
-            <div class="box overflow-hidden w-full sm:w-[400px] h-[400px] border-2  rounded-xl my-4">
-                <div class="project-image w-full h-[300px]">
-                    <img src="https://images.unsplash.com/photo-1522069213448-443a614da9b6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z2FtZXxlbnwwfHwwfHx8MA%3D%3D" alt="" class="w-full h-full">
+            <div class="box overflow-hidden w-full sm:w-[400px] h-auto border-2  rounded-xl my-4">
+                <div class="project-image w-full h-[200px] sm:h-[300px]">
+                    <img src="./assets/images/amazonclone.png" alt="" class="w-full h-full">
                 </div>
                 <div class="project-name p-2">
-                    <h2 class="text-white text-2xl font-mono">Connect four game</h2>
+                    <h2 class="text-white text-2xl font-mono">Amazon website clone</h2>
                 </div>
+                <div class="flex space-x-4 p-4">
+                    <a href="https://github.com/Samir123786/website-clone/tree/main/amazon%20clone" class="flex items-center space-x-2 text-white hover:text-red-500">
+                        <i class="fa-solid fa-download"></i>
+                        <p class="text-sm">Source Code</p>
+                    </a>
+                
+                    <a href="https://samir123786.github.io/website-clone/amazon%20clone/" class="flex items-center space-x-2 text-white hover:text-red-500">
+                        <i class="fa-solid fa-eye"></i>
+                        <p class="text-sm">View Project</p>
+                    </a>
+                
+                    <a href="https://www.youtube.com/playlist?list=PLzc4VJhjKTXgnXIqHMQv2adg5nJd6AMnk" class="flex items-center space-x-2 text-white hover:text-red-500">
+                        <i class="fa-solid fa-video"></i>
+                        <p class="text-sm">Watch Video</p>
+                    </a>
+                </div>
+                
+                
             </div>
-            <div class="box overflow-hidden w-full sm:w-[400px] h-[400px] border-2  rounded-xl my-4">
-                <div class="project-image w-full h-[300px]">
-                    <img src="https://images.unsplash.com/photo-1522069213448-443a614da9b6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z2FtZXxlbnwwfHwwfHx8MA%3D%3D" alt="" class="w-full h-full">
+            <div class="box overflow-hidden w-full sm:w-[400px] h-auto border-2  rounded-xl my-4">
+                <div class="project-image w-full h-[200px] sm:h-[300px]">
+                    <img src="./assets/images/thumbnail_guess-the-no.jpg" alt="" class="w-full h-full">
                 </div>
                 <div class="project-name p-2">
-                    <h2 class="text-white text-2xl font-mono">Connect four game</h2>
+                    <h2 class="text-white text-2xl font-mono">Guess Number Game</h2>
                 </div>
+                <div class="flex space-x-4 p-4">
+                    <a href="https://github.com/Samir123786/Samir123786.github.io/tree/main/connect%20four%20master" class="flex items-center space-x-2 text-white hover:text-red-500">
+                        <i class="fa-solid fa-download"></i>
+                        <p class="text-sm">Source Code</p>
+                    </a>
+                
+                    <a href="https://samir123786.github.io/connect%20four%20master/" class="flex items-center space-x-2 text-white hover:text-red-500">
+                        <i class="fa-solid fa-eye"></i>
+                        <p class="text-sm">View Project</p>
+                    </a>
+                
+                    <a href="https://www.youtube.com/playlist?list=PLzc4VJhjKTXgVfunV-MfZIjBDWmdccnzr" class="flex items-center space-x-2 text-white hover:text-red-500">
+                        <i class="fa-solid fa-video"></i>
+                        <p class="text-sm">Watch Video</p>
+                    </a>
+                </div>
+                
             </div>
-            <div class="box overflow-hidden w-full sm:w-[400px] h-[400px] border-2  rounded-xl my-4">
-                <div class="project-image w-full h-[300px]">
-                    <img src="https://images.unsplash.com/photo-1522069213448-443a614da9b6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z2FtZXxlbnwwfHwwfHx8MA%3D%3D" alt="" class="w-full h-full">
+            <div class="box overflow-hidden w-full sm:w-[400px] h-auto border-2  rounded-xl my-4">
+                <div class="project-image w-full h-[200px] sm:h-[300px]">
+                    <img src="./assets//images/fiverclone.png" alt="" class="w-full h-full">
                 </div>
                 <div class="project-name p-2">
-                    <h2 class="text-white text-2xl font-mono">Connect four game</h2>
+                    <h2 class="text-white text-2xl font-mono">Fiver website clone</h2>
                 </div>
+                <div class="flex space-x-4 p-4">
+                    <a href="https://github.com/Samir123786/Samir123786.github.io/tree/main/connect%20four%20master" class="flex items-center space-x-2 text-white hover:text-red-500">
+                        <i class="fa-solid fa-download"></i>
+                        <p class="text-sm">Source Code</p>
+                    </a>
+                
+                    <a href="https://samir123786.github.io/connect%20four%20master/" class="flex items-center space-x-2 text-white hover:text-red-500">
+                        <i class="fa-solid fa-eye"></i>
+                        <p class="text-sm">View Project</p>
+                    </a>
+                
+                    <a href="https://www.youtube.com/playlist?list=PLzc4VJhjKTXgVfunV-MfZIjBDWmdccnzr" class="flex items-center space-x-2 text-white hover:text-red-500">
+                        <i class="fa-solid fa-video"></i>
+                        <p class="text-sm">Watch Video</p>
+                    </a>
+                </div>
+                
             </div>
 
 
@@ -96,16 +168,16 @@
           </div>
           <div class="right w-full text-center md:text-left md:w-[50%] ">
             <div class="title md:sticky md:top-16 w-full">
-                <h2 class="text-5xl lg:text-7xl text-white font-sarif tracking-wide font-bold ">My Project</h2>
+                <h2 class="text-2xl sm:text-5xl lg:text-7xl text-white font-sarif tracking-wide font-bold ">My Project</h2>
                 <button class="mt-8 border-2 border-red-600 rounded-xl 
-                bg-transparent py-1 px-10 text-white">All Projects</button>
+                bg-transparent py-1 px-10 text-white hover:bg-green-500 hover:border-none">All Projects</button>
             </div>
           </div>
     </div>
         </section>
-        <section class="aboutsection bg-[url('./assets/bg3.jpg')] bg-fixed py-16" id="about">
-            <div class="container bg-slate-900 w-full sm:w-[80%] p-10 m-auto">
-                <h2 class="text-xl text-white sm:text-3xl tracking-wide sm:leading-[45px] font-semibold capitalize italic">
+        <section class="aboutsection bg-[url('./assets/bg3.jpg')] bg-fixed relative bg-blend-multiply bg-red-500 py-16" id="about">
+            <div class="aboutcontainer bg-slate-900  w-full sm:w-[80%]  p-10 m-auto">
+                <h2 class="text-xl w-full  m-auto sm:w-[80%] text-white sm:text-3xl tracking-wide sm:leading-[45px] font-semibold capitalize italic">
                     Welcome to my corner of the web! My name is <span class="text-red-500">Samir Rain</span>, and I’m a passionate 
                     <span class="text-red-500">web developer, graphic designer, and mobile app developer</span> from Nepal, 
                     currently pursuing a Bachelor’s degree. With a flair for creating visually stunning and highly functional 
@@ -115,43 +187,71 @@
                 </h2>
                 
 
-             <div class="about-content flex justify-center items-center sm:justify-between flex-col md:flex-row py-16 gap-5">
-                <div class="social-links flex flex-col gap-5 w-full sm:w-auto">
-                    <a href="https://github.com/codewithsamir" target="_blank">
-                        <button class="bg-red-800 text-white py-2 px-8 rounded-xl w-full sm:w-auto flex items-center space-x-2 transition-transform duration-300 hover:scale-105 hover:bg-red-600">
-                            <i class="fa-brands fa-github"></i>
-                            <span>GitHub</span>
-                        </button>
-                    </a>
-                    <a href="https://www.instagram.com/teamofsamir" target="_blank">
-                        <button class="bg-red-800 text-white py-2 px-8 rounded-xl w-full sm:w-auto flex items-center space-x-2 transition-transform duration-300 hover:scale-105 hover:bg-red-600">
-                            <i class="fa-brands fa-instagram"></i>
-                            <span>Instagram</span>
-                        </button>
-                    </a>
-                    <a href="https://www.facebook.com/profile.php?id=100072162905355&mibextid=ZbWKwL" target="_blank">
-                        <button class="bg-red-800 text-white py-2 px-8 rounded-xl w-full sm:w-auto flex items-center space-x-2 transition-transform duration-300 hover:scale-105 hover:bg-red-600">
-                            <i class="fa-brands fa-facebook"></i>
-                            <span>Facebook</span>
-                        </button>
-                    </a>
-                    <a href="https://www.youtube.com/@codewithsamir" target="_blank">
-                        <button class="bg-red-800 text-white py-2 px-8 rounded-xl w-full sm:w-auto flex items-center space-x-2 transition-transform duration-300 hover:scale-105 hover:bg-red-600">
-                            <i class="fa-brands fa-youtube"></i>
-                            <span>YouTube</span>
-                        </button>
-                    </a>
-                    <a href="https://www.linkedin.com/in/samir-rain-0467b7259/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
-                        <button class="bg-red-800 text-white py-2 px-8 rounded-xl w-full sm:w-auto flex items-center space-x-2 transition-transform duration-300 hover:scale-105 hover:bg-red-600">
-                            <i class="fa-brands fa-linkedin"></i>
-                            <span>LinkedIn</span>
-                        </button>
-                    </a>
-                    
+             <div class="about-content flex justify-center  sm:justify-between flex-col md:flex-row py-16 gap-5">
+                
+                <div class="social-links ">
+                    <h2 class="text-center text-orange-500 text-3xl font-semibold py-8 uppercase italic">visit here</h2>
+                    <div class="flex flex-wrap justify-center gap-5 w-full sm:w-[400px]">
+                        <a href="https://github.com/codewithsamir" target="_blank">
+                            <button class="bg-red-800 text-white py-2 px-8 rounded-xl w-full sm:w-auto flex items-center space-x-2 transition-transform duration-300 hover:scale-105 hover:bg-red-600">
+                                <i class="fa-brands fa-github"></i>
+                                <span>GitHub</span>
+                            </button>
+                        </a>
+                        <a href="https://www.instagram.com/teamofsamir" target="_blank">
+                            <button class="bg-red-800 text-white py-2 px-8 rounded-xl w-full sm:w-auto flex items-center space-x-2 transition-transform duration-300 hover:scale-105 hover:bg-red-600">
+                                <i class="fa-brands fa-instagram"></i>
+                                <span>Instagram</span>
+                            </button>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100072162905355&mibextid=ZbWKwL" target="_blank">
+                            <button class="bg-red-800 text-white py-2 px-8 rounded-xl w-full sm:w-auto flex items-center space-x-2 transition-transform duration-300 hover:scale-105 hover:bg-red-600">
+                                <i class="fa-brands fa-facebook"></i>
+                                <span>Facebook</span>
+                            </button>
+                        </a>
+                        <a href="https://www.youtube.com/@codewithsamir" target="_blank">
+                            <button class="bg-red-800 text-white py-2 px-8 rounded-xl w-full sm:w-auto flex items-center space-x-2 transition-transform duration-300 hover:scale-105 hover:bg-red-600">
+                                <i class="fa-brands fa-youtube"></i>
+                                <span>YouTube</span>
+                            </button>
+                        </a>
+                        <a href="https://www.linkedin.com/in/samir-rain-0467b7259/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                            <button class="bg-red-800 text-white py-2 px-8 rounded-xl w-full sm:w-auto flex items-center space-x-2 transition-transform duration-300 hover:scale-105 hover:bg-red-600">
+                                <i class="fa-brands fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </button>
+                        </a>
+                        <a href="https://chat.whatsapp.com/Fi21W6071MIB5WiBiFrz63" target="_blank">
+                            <button class="bg-red-800 text-white py-2 px-8 rounded-xl w-full sm:w-auto flex items-center space-x-2 transition-transform duration-300 hover:scale-105 hover:bg-red-600">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>Whatsapp</span>
+                            </button>
+                        </a>
+                        <a href="https://www.whatsapp.com/channel/0029VaAWomgKwqSX0I3XOR3p" target="_blank">
+                            <button class="bg-red-800 text-white py-2 px-8 rounded-xl w-full sm:w-auto flex items-center space-x-2 transition-transform duration-300 hover:scale-105 hover:bg-red-600">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>Whatsapp Channel</span>
+                            </button>
+                        </a>
+                        <a href="https://discord.gg/yXr7fZNE" target="_blank">
+                            <button class="bg-red-800 text-white py-2 px-8 rounded-xl w-full sm:w-auto flex items-center space-x-2 transition-transform duration-300 hover:scale-105 hover:bg-red-600">
+                                <i class="fa-brands fa-discord"></i>
+                                <span>Discord</span>
+                            </button>
+                        </a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=codewithsmair@gmail.com" target="_blank">
+                            <button class="bg-red-800 text-white py-2 px-8 rounded-xl w-full sm:w-auto flex items-center space-x-2 transition-transform duration-300 hover:scale-105 hover:bg-red-600">
+                                <i class="fa-regular fa-envelope"></i>
+                                <span>Email</span>
+                            </button>
+                        </a>
+    
+                    </div>                    
                     
                 </div>
            
-                <div class="imgbox w-[500px] h-[400px] overflow-hidden rounded-lg">
+                <div class="imgbox w-full sm:w-[500px] h-[400px] overflow-hidden rounded-lg">
                     <img src="https://images.unsplash.com/photo-1455894127589-22f75500213a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNvbXB1dGVyfGVufDB8fDB8fHww" alt="" class="w-full h-full object-cover">
                 </div>
              </div>
@@ -225,7 +325,7 @@
 </div>
             </div>
         </section>
-        <section class="contactsection bg-[url('./assets/bg2.jpg')] bg-fixed h-screen w-full" id="contact">
+        <section class="contactsection bg-[url('./assets/bg2.jpg')] bg-fixed h-screen w-full " id="contact">
             <div class="move-chat overflow-hidden bg-red-900 p-4 flex  ">
                 <div class="move translate-x-[-100%] px-6 flex flex-shrink-0 gap-8 items-center">
                     <h2 class="text-white text-5xl">Let's Chat </h2>
@@ -275,19 +375,19 @@
            <div class="flex justify-center  items-center flex-col lg:flex-row-reverse gap-16 py-14">
             <div class="left bg-red-700  p-5 w-fulls sm:w-[600px] rounded-md " >
                 <h2 class="text-3xl font-semibold text-white text-center">Contact Us</h2>
-                <form action=""  class="flex flex-col gap-2 ">
+                <form onsubmit="sendmail(); reset(); return false;"  class="flex flex-col gap-2 ">
                     <div class="input-box">
                         <label for="Enter your Name  " class="block text-white">Enter your Name</label>
                         <input type="text" autocomplete="off" class="p-2 border-none outline-none rounded-md w-full my-1" placeholder="Enter your name">
                     </div>
                     <div class="input-box">
                         <label for="Enter your Name  " class="block text-white">Enter Your Email</label>
-                        <input type="text" autocomplete="off" class="p-2 border-none outline-none rounded-md w-full my-1" placeholder="Enter your Email">
+                        <input type="text" id="useremail" autocomplete="off" class="p-2 border-none outline-none rounded-md w-full my-1" placeholder="Enter your Email">
                     </div>
                     <div class="input-box">
                         <label for="Enter your Name  " class="block text-white">Enter your Message</label>
                         
-                        <textarea name="" id="" class="p-2 border-none outline-none rounded-md w-full h-[120px] my-1 resize-none" placeholder="Enter your Message"></textarea>
+                        <textarea name="" id="message" class="p-2 border-none outline-none rounded-md w-full h-[120px] my-1 resize-none" placeholder="Enter your Message"></textarea>
                     </div>
                     <div class="input-box">
                    <button class="py-2 px-10 text-sm text-white bg-black hover:border-2 hover:border-black hover:bg-transparent hover:text-black rounded-xl">Submit</button>
@@ -323,5 +423,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script type="module" src="./input.js"></script>
+  
 </body>
 </html>

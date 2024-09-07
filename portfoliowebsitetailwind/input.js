@@ -7,28 +7,18 @@ const navlink = document.querySelectorAll(".navbar ul li a")
 navbar.addEventListener("click",()=>{
     navbarbox.classList.remove("right-[-100%]");
     navbarbox.classList.add("right-0");
-    gsap.from(".navbar ul li a",{
-        x:100,
-        duration:0.2,
-        stagger:2,
-        opcity:0,
-        
-    })
+
 
 })
 closenavbar.addEventListener("click",()=>{
-    console.log("hello");
+    
     
     navbarbox.classList.add("right-[-100%]");
-    console.log("hello2")
+    
     // navbarbox.classList.add("right-0");
     
 })
-gsap.from(".navbar ul li a",{
-    y:-100,
-    duration:0.2,
-    stagger:2
-})
+
 let gsaptimeline = gsap.timeline()
 
 gsaptimeline.from(".hero-name:nth-child(1)",{
@@ -60,6 +50,11 @@ gsap.to(".move", {
        // Make the animation reverse direction on each cycle
     
   });
+  
+
+
+
+
   
 
 })
